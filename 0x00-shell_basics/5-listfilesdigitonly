@@ -1,2 +1,2 @@
 #!/bin/bash
-In -s /bin/ ls __is__ 
+ls -na
