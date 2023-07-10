@@ -1,7 +1,23 @@
-# ssh config file
+Include /etc/ssh/ssh_config.d/*.conf
+
 Host *
-      PasswordAuthentication no
-      IdentifyFile ~/.ssh/school
-      SendEnv LANG LC_*
-      HashKnownHosts yes
-      GSSAPIAuthentication yes
+#   ForwardAgent no
+#   ForwardX11 no
+#   ForwardX11Trusted yes
+    PasswordAuthentication no
+#   HostbasedAuthentication no
+#   GSSAPIAuthentication no
+#   GSSAPIDelegateCredentials no
+#   GSSAPIKeyExchange no
+#   GSSAPITrustDNS no
+#   BatchMode no
+#   CheckHostIP yes
+#   AddressFamily any
+#   ConnectTimeout 0
+#   StrictHostKeyChecking ask
+    IdentityFile ~/.ssh/school
+#   IdentityFile ~/.ssh/id_rsa
+#   IdentityFile ~/.ssh/school 
+#   IdentityFile ~/.ssh/id_dsa
+#   IdentityFile ~/.ssh/id_ecdsa
+#   IdentityFile ~/.ssh/id_ed25519
